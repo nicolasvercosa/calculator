@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(21, 25, 29);
+}
+
+.calculadora {
+    position: relative;
+    display: grid;
+    border-radius: 100px;
+}
+
+.calculadora .estilo-tela {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    width: 271px;
+    border-top: 1px solid rgb(241, 159, 159) ;
+    border-bottom:1px solid rgb(212, 112, 29);
+    border-right: 1px solid rgb(226, 111, 107);
+    border-left:1px solid rgb(224, 144, 98);
+    border-radius: 1px;
+    outline: none;
+    padding: 10px;
+    font-size: 40px;
+    color:blanchedalmond;
+    font-weight: 600;
+    word-wrap: break-word;
+    background-color: rgba(221, 125, 34, 0.651);
+}
+
+.calculadora button {
+    display: grid;
+    width: 68px;
+    height: 60px;
+    color: blanchedalmond;
+    place-items: center;
+    border: none;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+
+.calculadora .btOperador {
+    background-color: rgb(14, 13, 13);
+    border: none;
+}
+
+.calculadora .btOperador:hover{
+    background-color: rgb(32, 30, 30);
+}
+
+.calculadora button.btNum, .zero {
+    background-color: rgb(14, 13, 13);  
+}
+
+.calculadora button.zero:hover{
+    background-color: rgb(32, 30, 30);
+    transition: 0.3s;
+}
+
+.calculadora button.btNum:hover{
+    background-color: rgb(32, 30, 30);
+    transition: 0.3s;
+}
+
+.calculadora button.btNum:active {
+    background-color: rgb(70, 66, 66);
+}
+
+.calculadora button.zero:hover {
+    background-color: rgb(32, 30, 30);
+    transition: 0.3s;
+}
+
+.calculadora .zero:active {
+    background-color: rgb(255, 94, 0);   
+}
+
+.calculadora .btOperador:active {
+    background-color: rgb(223, 126, 15);
+}
+
+.calculadora .igual {
+    background-color: rgb(253, 103, 2);
+    border: 1px solid rgb(160, 64, 8);
+}
+
+
+.calculadora button.igual {
+    grid-column: span 1;
+    grid-row: span 4;
+    height: 30vh;
+}
+
+.calculadora .igual:active {
+    background-color: rgb(248, 139, 66);
+
+}
+
+.calculadora .zero {
+    grid-column: span 2;
+    width: 136px;
+}
+
+ 
